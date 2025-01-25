@@ -4,7 +4,7 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+// Teste larissa
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -21,6 +21,7 @@ int main() {
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
 
+    // nível novato
     printf("Digite código postal da cidade: "); // Pede para que o usuário digite o código postal da cidade.
     scanf("%d", &codigo_cidade); // armazena o valor na variável
 
@@ -50,6 +51,17 @@ int main() {
     printf("PIB: %.2f\n", pib);    // Exibe o PIB com 2 casas decimais
     printf("Pontos Turísticos: %d\n", pontos_turisticos); // Exibe a quantidade de pontos turísticos
 
+    // nível aventureiro
+    float densidade_populacional;
+    float pib_per_capita;
+
+    densidade_populacional = populacao / area; // calcular a densidade populacional
+    pib_per_capita = pib / populacao; // calculando o pip por pessoa (pip per capita)
+
+    printf("Densidade Populacional: %.2f\n", densidade_populacional); // exibindo a densidade populacional
+    printf("PIB per capita: %.2f\n", pib_per_capita); // exibindo o pip por pessoa
+
+    // nível mestre
     return 0;
 }
 
